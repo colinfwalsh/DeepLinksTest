@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,63 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oj-Ca-N2y" userLabel="backgroundFilter">
-                                <rect key="frame" x="0.0" y="32" width="375" height="667"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutgers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-bv-Uwi">
-                                        <rect key="frame" x="135.5" y="315" width="104" height="37"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="Sih-bv-Uwi" firstAttribute="centerX" secondItem="9oj-Ca-N2y" secondAttribute="centerX" id="PQn-YF-6CC"/>
-                                    <constraint firstItem="Sih-bv-Uwi" firstAttribute="centerY" secondItem="9oj-Ca-N2y" secondAttribute="centerY" id="pz3-WK-N51"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-MX-xZ5">
-                                <rect key="frame" x="0.0" y="64" width="169" height="603"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="slideItem" id="n9U-IU-uLI" customClass="SlideMenuTableViewCell" customModule="DeepLinksTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="169" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n9U-IU-uLI" id="sBd-Rd-W93">
-                                            <rect key="frame" x="0.0" y="0.0" width="169" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-7j-wSi">
-                                                    <rect key="frame" x="15" y="10" width="139" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="contentTitle" destination="CVV-7j-wSi" id="wNT-FW-z3l"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="EMh-MX-xZ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BeW-Dc-R9d"/>
-                            <constraint firstItem="9oj-Ca-N2y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="C2V-Fu-2jU"/>
-                            <constraint firstItem="EMh-MX-xZ5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="X6L-mH-fk7"/>
-                            <constraint firstItem="EMh-MX-xZ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XIk-ee-Jhh"/>
-                            <constraint firstItem="9oj-Ca-N2y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="YM6-Dt-FOW"/>
-                            <constraint firstItem="9oj-Ca-N2y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="oyY-55-sCz"/>
-                            <constraint firstItem="9oj-Ca-N2y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wbb-1g-uY4"/>
-                            <constraint firstItem="EMh-MX-xZ5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ytb-4Q-wQf"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="75h-zb-79V">
@@ -84,15 +27,51 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="backgroundFilter" destination="9oj-Ca-N2y" id="nO6-na-twq"/>
-                        <outlet property="slideMenu" destination="EMh-MX-xZ5" id="Kny-fx-tpm"/>
-                        <outlet property="slideMenuTrailing" destination="BeW-Dc-R9d" id="6cw-Tq-IkJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400.80000000000001" y="-564.46776611694156"/>
+        </scene>
+        <!--Slide Menu-->
+        <scene sceneID="jJ0-Vj-X0k">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lj-Xv-5yG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="slideMenu" modalPresentationStyle="overFullScreen" id="Lxc-fU-uY5" customClass="SlideMenu" customModule="DeepLinksTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PC9-Rb-fGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="slideItem" rowHeight="100" id="HNP-Cn-net" customClass="SlideMenuTableViewCell" customModule="DeepLinksTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HNP-Cn-net" id="6Fq-jn-fV7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-gn-OXt">
+                                            <rect key="frame" x="16" y="30" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentTitle" destination="5eh-gn-OXt" id="Vle-4H-jbb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lxc-fU-uY5" id="BQg-sX-uak"/>
+                            <outlet property="delegate" destination="Lxc-fU-uY5" id="aCN-gR-7Fi"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1166" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FTC-sH-LZf">

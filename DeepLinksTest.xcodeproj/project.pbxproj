@@ -16,6 +16,7 @@
 		6A7F2516210253F7007B7856 /* DeepLinksTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F2515210253F7007B7856 /* DeepLinksTestUITests.swift */; };
 		6A7F252621027F46007B7856 /* SlideMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F252521027F46007B7856 /* SlideMenuDataSource.swift */; };
 		6A7F252821027F9A007B7856 /* SlideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F252721027F9A007B7856 /* SlideMenuTableViewCell.swift */; };
+		6A7F252A21124CA5007B7856 /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F252921124CA5007B7856 /* SlideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6A7F2517210253F7007B7856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7F252521027F46007B7856 /* SlideMenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuDataSource.swift; sourceTree = "<group>"; };
 		6A7F252721027F9A007B7856 /* SlideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		6A7F252921124CA5007B7856 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				6A7F24F5210253F5007B7856 /* AppDelegate.swift */,
 				6A7F24F7210253F5007B7856 /* MainViewController.swift */,
+				6A7F252921124CA5007B7856 /* SlideMenu.swift */,
 				6A7F252521027F46007B7856 /* SlideMenuDataSource.swift */,
 				6A7F252721027F9A007B7856 /* SlideMenuTableViewCell.swift */,
 				6A7F24F9210253F5007B7856 /* Main.storyboard */,
@@ -266,6 +269,7 @@
 				6A7F24F8210253F5007B7856 /* MainViewController.swift in Sources */,
 				6A7F24F6210253F5007B7856 /* AppDelegate.swift in Sources */,
 				6A7F252621027F46007B7856 /* SlideMenuDataSource.swift in Sources */,
+				6A7F252A21124CA5007B7856 /* SlideMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
